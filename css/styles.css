@@ -312,16 +312,14 @@ img {
     border: none;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     cursor: pointer;
-    transition: color var(--anim), background-color var(--anim);
+    transition: background-color var(--anim);
 }
 
 
 
 .idea-btn:hover,
 .idea-btn:focus {
-    color: var(--white-txt-clr);
     background-color: var(--accent-txt-clr);
-    cursor: pointer;
 }
 
 /* Modal Window */
@@ -504,9 +502,6 @@ img {
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-
-    
-
 }
 
 .team-list-item:not(:last-child) {
@@ -555,15 +550,19 @@ img {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    fill: var(--icon-clr);
+    color: var(--icon-clr);
     background-color: var(--bg-wh-clr);
     transition: color var(--anim), background-color var(--anim);
 }
 
 .team-sm-link:hover,
 .team-sm-link:focus {
-    fill: var(--white-txt-clr);
+    color: var(--white-txt-clr);
     background-color: var(--accent-txt-clr);
+}
+
+.team-icon {
+    fill: currentColor;
 }
 
 /* Секція Clients */
@@ -596,19 +595,23 @@ img {
     height: 92px;
     border: 1px solid var(--icon-clr);
     border-radius: 4px;
-    fill: var(--icon-clr);
+    color: var(--icon-clr);
     transition: color var(--anim), border-color var(--anim);
 }
 
 .clients-item-link:hover,
 .clients-item-link:focus {
-    border: 1px solid var(--accent-txt-clr);
-    fill: var(--accent-txt-clr);
-    background-color: var(--bg-wh-clr);
+    border-color: var(--accent-txt-clr);
+    color: var(--accent-txt-clr);
+    
 }
 
 .clients-list-item:not(:last-child) {
     margin-right: 30px;
+}
+
+.clients-icon {
+    fill: currentColor;
 }
 
 /* page studio end */
@@ -648,8 +651,6 @@ img {
 
 .portfolio-item-link {
     display: block;
-   
-    
 }
 
 .portfolio-img-wrap {
@@ -658,8 +659,8 @@ img {
 }
 
 
-.portfolio-item-link:hover,
-.portfolio-item-link:focus {
+.portfolio-list-item:hover,
+.portfolio-list-item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
